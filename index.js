@@ -3,3 +3,6 @@
 function sum(numOne, numTwo) {
   console.log('"The sum of ' + numOne + ' and ' + numTwo + ' is ' + (numOne + numTwo) + '."');
 }
+function multiply(numOne, numTwo) {
+  console.log('"The product of ' + numOne + ' and ' + numTwo + ' is ' + (numOne * numTwo) + '."');
+}
