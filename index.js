@@ -28,7 +28,7 @@ function sumArray(myArray){
 function multiplyArray(myArray){
   console.table([myArray]);
   console.log('The numbers ' + myArray + ' have a product of ' +
-  ( function () { var myResult = 1; for (var i = 0; i < myArray.length ; i++) { myResult *= myArray[i]; } return myResult; } () )
+  ( function () { var myResult = myArray[0]; for (var i = 1; i < myArray.length ; i++) { myResult *= myArray[i]; } return myResult; } () )
   + '.'
 );
 }
