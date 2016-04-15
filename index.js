@@ -15,3 +15,19 @@ function sumAndMultiply( numOne, numTwo, numThree) {
   console.log('"' + numOne + ' and ' + numTwo + ' and ' + numThree + ' sum to ' + (sum(sum(numOne,numTwo),numThree)) + '."');
   console.log('"The numbers ' + numOne + ' and ' + numTwo + ' and ' + numThree + ' have a product of ' + (multiply(multiply(numOne,numTwo),numThree)) + '."');
 }
+
+function sumArray(myArray){
+  console.table(myArray);
+  console.log(
+    (
+      function ()
+      { var mySum = 0;
+        for (var i = 0; i < myArray.length ; i++)
+        {
+          mySum += myArray[i];
+        }
+        return mySum;
+      }
+      () )
+    );
+}
