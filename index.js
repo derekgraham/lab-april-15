@@ -12,10 +12,11 @@ function multiply(numOne, numTwo) {
 }
 
 function sumAndMultiply( numOne, numTwo, numThree) {
-  console.log('"' + numOne + ' and ' + numTwo + ' and ' + numThree + ' sum to ' + (sum(sum(numOne,numTwo),numThree)) + '."');
-  console.log('"The numbers ' + numOne + ' and ' + numTwo + ' and ' + numThree + ' have a product of ' + (multiply(multiply(numOne,numTwo),numThree)) + '."');
+  var result = [sum(sum(numOne,numTwo),numThree), multiply(multiply(numOne,numTwo),numThree)];
+  console.log('"' + numOne + ' and ' + numTwo + ' and ' + numThree + ' sum to ' + result[0] + '."');
+  console.log('"The numbers ' + numOne + ' and ' + numTwo + ' and ' + numThree + ' have a product of ' + result[1] + '."');
+  return result;
 }
-
 function sumArray(myArray){
   console.table(myArray);
   console.log(myArray + ' was passed in as an array of numbers, and ' +
