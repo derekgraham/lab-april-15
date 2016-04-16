@@ -35,21 +35,3 @@ function multiplyArray(myArray){
   myResult.innerHTML = 'The numbers ' + myArray + ' have a product of ' +
   ( function () { var myResult = myArray[0]; for (var i = 1; i < myArray.length ; i++) { myResult *= myArray[i]; } return myResult; } () ) + '.';
 }
-
-function writeQuestionsToHTML(){
-
-  var myResult = document.getElementById('p1');
-  myResult.innerHTML = '<em>(Don\'t forget to create a new branch!)</em> Write a function called <b>sum()</b> that takes in two numbers as arguments and then returns the sum of those numbers.';
-
-  myResult = document.getElementById('p2');
-  myResult.innerHTML = 'Write a function called <b>multiply()</b> that takes in two numbers as arguments and then returns the product of those numbers. ';
-
-  myResult = document.getElementById('p3');
-  myResult.innerHTML = 'Write a function called <b>sumAndMultiply()</b> that takes in THREE numbers as arguments and then returns two values in an array: the sum of those numbers and the product of those numbers.';
-
-  myResult = document.getElementById('p4');
-  myResult.innerHTML = 'Write a function called <b>sumArray()</b> that takes in an array of numbers as a single argument and then returns the sum of those numbers.';
-
-  myResult = document.getElementById('p5');
-  myResult.innerHTML = 'Write a function called <b>multiplyArray()</b> that takes in an array of numbers as a single argument and then returns the product of those numbers.';
-}
